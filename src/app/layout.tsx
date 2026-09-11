@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   title: siteConfig.siteName,
   description:
     "A collection of distinctive physical artworks combining experimentation, modern techniques, natural materials and unconventional processes.",
+  other: {
+    "color-scheme": "light only",
+  },
+  themeColor: "#e4eef9",
 };
 
 export default function RootLayout({
@@ -35,8 +39,8 @@ export default function RootLayout({
   const logo = getLogoImage();
 
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body className="min-h-dvh flex flex-col">
+    <html lang="en" className={`${display.variable} ${body.variable}`} style={{ colorScheme: "light only" }}>
+      <body className="min-h-dvh flex flex-col bg-cream text-ink">
         <Header logo={logo} />
         <main className="flex-1">{children}</main>
         <Footer logo={logo} />

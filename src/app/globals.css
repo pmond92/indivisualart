@@ -17,16 +17,20 @@
 
 @layer base {
   html {
+    color-scheme: light only;
     scroll-behavior: smooth;
+    background-color: #e4eef9;
   }
 
   body {
     @apply bg-cream text-ink font-sans antialiased;
+    color-scheme: light only;
+    background-color: #e4eef9;
     background-image:
       radial-gradient(ellipse 90% 55% at 50% -15%, rgb(113 176 255 / 0.45), transparent),
       radial-gradient(ellipse 60% 40% at 100% 0%, rgb(26 107 181 / 0.18), transparent),
       linear-gradient(180deg, #edf4fc 0%, #dce9f8 40%, #e4eef9 100%);
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   ::selection {
