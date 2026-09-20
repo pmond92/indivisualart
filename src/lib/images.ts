@@ -50,10 +50,16 @@ export function getImagesFromFolder(folder: string): GalleryImage[] {
   return readdirSync(dir)
     .filter(isSupportedImage)
     .sort((a, b) => {
-      const aFirst = path.parse(a).name.toLowerCase() === "first";
-      const bFirst = path.parse(b).name.toLowerCase() === "first";
-      if (aFirst !== bFirst) {
-        return aFirst ? -1 : 1;
+      const rank = (filename: string) => {
+        const name = path.parse(filename).name.toLowerCase();
+        if (name === "first") return 0;
+        if (name.startsWith("mock")) return 2;
+        return 1;
+      };
+
+      const rankDiff = rank(a) - rank(b);
+      if (rankDiff !== 0) {
+        return rankDiff;
       }
       return a.localeCompare(b, undefined, { sensitivity: "base" });
     })
