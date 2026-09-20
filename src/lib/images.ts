@@ -49,7 +49,14 @@ export function getImagesFromFolder(folder: string): GalleryImage[] {
 
   return readdirSync(dir)
     .filter(isSupportedImage)
-    .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }))
+    .sort((a, b) => {
+      const aFirst = path.parse(a).name.toLowerCase() === "first";
+      const bFirst = path.parse(b).name.toLowerCase() === "first";
+      if (aFirst !== bFirst) {
+        return aFirst ? -1 : 1;
+      }
+      return a.localeCompare(b, undefined, { sensitivity: "base" });
+    })
     .map((filename) => ({
       filename,
       src: toPublicSrc(folder, filename),
