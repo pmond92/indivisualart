@@ -18,6 +18,7 @@ Place files in:
 - `/public/images/logo.png` - site logo
 - `/public/images/ozdinkum/` - OZ Dinkum Series gallery
 - `/public/images/blart/` - Blart Series gallery
+- `/public/images/iconic/` - Iconic Series (`icon16.png` for homepage preview; `icons1.png` and `icons2.png` for the gallery)
 
 Supported formats: jpg, jpeg, png, webp, avif
 

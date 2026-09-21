@@ -26,6 +26,7 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/oz-dinkum", label: "OZ Dinkum" },
   { href: "/blart", label: "Blart" },
+  { href: "/iconic", label: "Iconic" },
 ] as const;
 
 export const homeContent = {
@@ -70,6 +71,20 @@ export const collections = {
       "Early experiments used colour, but black paint ultimately produced the most striking results. A specially developed black paint mixture creates intricate patterns as bubbles form and burst across the surface.",
       "Different materials were tested, including plastic and enamel surfaces, before glossy whiteboard produced the strongest patterns.",
       "Every bubble behaves differently. No two patterns are exactly the same, making each original work unique.",
+    ],
+  },
+  iconic: {
+    slug: "iconic",
+    href: "/iconic",
+    title: "Iconic Series",
+    shortTitle: "Iconic",
+    homeSummary:
+      "A collection of original website logos and graphics created in the early 2000s, capturing the bold, playful style of the early web.",
+    imageFolder: "iconic",
+    previewFilename: "icon16.png",
+    galleryFilenames: ["icons1.png", "icons2.png"],
+    description: [
+      "A collection of original website logos and graphics created in the early 2000s, capturing the bold, playful style of the early web.",
     ],
   },
 } as const;

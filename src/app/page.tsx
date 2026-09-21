@@ -1,13 +1,21 @@
 import Image from "next/image";
 import { CollectionPreview } from "@/components/CollectionPreview";
 import { EtsyButton } from "@/components/EtsyButton";
-import { getImagesFromFolder, getLogoImage } from "@/lib/images";
+import {
+  getImagesFromFolder,
+  getLogoImage,
+  getNamedImage,
+} from "@/lib/images";
 import { collections, homeContent, siteConfig } from "@/lib/site";
 
 export default function HomePage() {
   const logo = getLogoImage();
   const ozImages = getImagesFromFolder(collections.ozDinkum.imageFolder);
   const blartImages = getImagesFromFolder(collections.blart.imageFolder);
+  const iconicPreview = getNamedImage(
+    collections.iconic.imageFolder,
+    collections.iconic.previewFilename,
+  );
 
   return (
     <div>
@@ -67,6 +75,12 @@ export default function HomePage() {
           href={collections.blart.href}
           image={blartImages[0] ?? null}
           reverse
+        />
+        <CollectionPreview
+          title={collections.iconic.title}
+          summary={collections.iconic.homeSummary}
+          href={collections.iconic.href}
+          image={iconicPreview}
         />
       </section>
     </div>

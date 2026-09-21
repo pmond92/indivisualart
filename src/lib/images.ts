@@ -71,6 +71,37 @@ export function getImagesFromFolder(folder: string): GalleryImage[] {
 }
 
 /**
+ * Returns specific images from a folder, in the order given.
+ * Missing filenames are skipped.
+ */
+export function getNamedImages(
+  folder: string,
+  filenames: readonly string[],
+): GalleryImage[] {
+  const available = new Map(
+    getImagesFromFolder(folder).map((image) => [
+      image.filename.toLowerCase(),
+      image,
+    ]),
+  );
+
+  return filenames.flatMap((filename) => {
+    const match = available.get(filename.toLowerCase());
+    return match ? [match] : [];
+  });
+}
+
+/**
+ * Resolves a single image by filename from a folder.
+ */
+export function getNamedImage(
+  folder: string,
+  filename: string,
+): GalleryImage | null {
+  return getNamedImages(folder, [filename])[0] ?? null;
+}
+
+/**
  * Resolves the logo image.
  * Prefers /public/images/logo.png (or siteConfig.logoPath),
  * then falls back to the first image in /public/images/logo/
