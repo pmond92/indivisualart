@@ -12,17 +12,11 @@ export default function BlartPage() {
         <h1 className="font-serif text-4xl leading-tight text-ink sm:text-5xl">
           {collection.title}
         </h1>
-        <p className="mt-3 font-serif text-xl italic text-ocean sm:text-2xl">
-          {collection.subheading}
-        </p>
         <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft sm:text-lg">
           {collection.description.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
-        <p className="mt-8 font-serif text-2xl leading-snug text-eucalyptus sm:text-3xl">
-          {collection.highlight}
-        </p>
       </header>
 
       <section className="mt-12 lg:mt-16" aria-label="Blart gallery">

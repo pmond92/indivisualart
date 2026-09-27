@@ -40,9 +40,6 @@ export default function HomePage() {
             </p>
           )}
 
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-ink-soft sm:text-lg">
-            {homeContent.intro}
-          </p>
           <div className="mt-9 flex justify-center">
             <EtsyButton />
           </div>

@@ -30,12 +30,10 @@ export const navLinks = [
 ] as const;
 
 export const homeContent = {
-  intro:
-    "A collection of distinctive physical artworks combining experimentation, modern techniques, natural materials and unconventional processes.",
   aboutHeading: "About the Artist",
   about: [
-    "Always experimenting with new ideas, materials and techniques, the artist behind these works is driven by a simple aim: to create something different.",
-    "The work ranges from engraved Australian-inspired timber pieces to abstract artworks created through an experimental bubble-painting process.",
+    "My story - I am always striving to create something new or different with a contemporary outlook and style.",
+    "These pages will display some completely unique ideas",
   ],
 } as const;
 
@@ -46,13 +44,10 @@ export const collections = {
     title: "The OZ Dinkum Series",
     shortTitle: "OZ Dinkum",
     homeSummary:
-      "Australian native wildlife brought together with laser engraving, painted marine plywood and natural eucalyptus leaf impressions.",
+      "This series incorporates most Australian native animals reptiles and birds as a centerpiece which is laser engraved into painted Marine ply displaying a 3D effect when viewing. Surrounding the engravings are impressions Eucalyptus leaves which are placed on the surface individually, these are then kept wet for several days to be able to leave their mark",
     imageFolder: "ozdinkum",
     description: [
-      "The OZ Dinkum Series centres on Australian native animals, reptiles and birds.",
-      "Each design is laser engraved into painted marine plywood, creating depth and a three-dimensional quality as light moves across the surface.",
-      "Surrounding the engraving are impressions created using real eucalyptus leaves. Each leaf is individually positioned against the surface and kept wet over several days, allowing its natural form and markings to leave an impression on the artwork.",
-      "The result combines modern engraving techniques with materials and forms drawn from the Australian landscape.",
+      "This series incorporates most Australian native animals reptiles and birds as a centerpiece which is laser engraved into painted Marine ply displaying a 3D effect when viewing. Surrounding the engravings are impressions Eucalyptus leaves which are placed on the surface individually, these are then kept wet for several days to be able to leave their mark",
     ],
   },
   blart: {
@@ -60,17 +55,11 @@ export const collections = {
     href: "/blart",
     title: "The Blart Series",
     shortTitle: "Blart",
-    subheading: "An experimental approach to bubble art.",
     homeSummary:
-      "Original abstract works created through an experimental bubble-painting process, where no two patterns are ever exactly the same.",
+      "Bubble art has been around for some time, usually done by schoolchildren and always in colour. I liked the concept of Bubble art but wanted to create a new and different way to make bubbles so I made implements to blow my own, to begin I used colour but I was not impressed with the results at all, black turned out to be the magic potion. My black paint formula leaves fantastic patterns and smaller bubbles on flat plastic white or enamel but the best patterns are left on shiny whiteboard, no 2 bubbles are the same, they are all totally unique",
     imageFolder: "blart",
-    highlight: "No two bubbles are the same.",
     description: [
-      "Bubble painting is traditionally associated with simple coloured patterns, but the Blart Series began with the idea of taking the process somewhere different.",
-      "After experimenting with conventional methods, the artist developed his own implements for creating and controlling the bubbles.",
-      "Early experiments used colour, but black paint ultimately produced the most striking results. A specially developed black paint mixture creates intricate patterns as bubbles form and burst across the surface.",
-      "Different materials were tested, including plastic and enamel surfaces, before glossy whiteboard produced the strongest patterns.",
-      "Every bubble behaves differently. No two patterns are exactly the same, making each original work unique.",
+      "Bubble art has been around for some time, usually done by schoolchildren and always in colour. I liked the concept of Bubble art but wanted to create a new and different way to make bubbles so I made implements to blow my own, to begin I used colour but I was not impressed with the results at all, black turned out to be the magic potion. My black paint formula leaves fantastic patterns and smaller bubbles on flat plastic white or enamel but the best patterns are left on shiny whiteboard, no 2 bubbles are the same, they are all totally unique",
     ],
   },
   iconic: {
@@ -79,12 +68,12 @@ export const collections = {
     title: "Iconic Series",
     shortTitle: "Iconic",
     homeSummary:
-      "A collection of original website logos and graphics created in the early 2000s, capturing the bold, playful style of the early web.",
+      "In the past I have made a lot of Logos' and icons for my own and other businesses, here is a montage of icons. enough for two colorful pieces",
     imageFolder: "iconic",
     previewFilename: "icon16.png",
     galleryFilenames: ["icons1.png", "icons2.png"],
     description: [
-      "A collection of original website logos and graphics created in the early 2000s, capturing the bold, playful style of the early web.",
+      "In the past I have made a lot of Logos' and icons for my own and other businesses, here is a montage of icons. enough for two colorful pieces",
     ],
   },
 } as const;
