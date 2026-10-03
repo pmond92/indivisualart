@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { GalleryImage } from "@/lib/images";
 
 type CollectionPreviewProps = {
   title: string;
-  summary?: string;
+  summary?: ReactNode;
   href: string;
   image: GalleryImage | null;
   reverse?: boolean;
